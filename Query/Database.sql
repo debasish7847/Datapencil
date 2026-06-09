@@ -1,8 +1,5 @@
 USE sql_challenge;
-create TABLE departments (
-    city VARCHAR(40),
-    dept_name VARCHAR(40)
-);
+
 create TABLE employees (
     emp_id VARCHAR(40),
     emp_name VARCHAR(40),
@@ -29,3 +26,25 @@ create TABLE performance (
     rating_2023 varchar(10),
     rating_2024 varchar(10)
 );
+
+create TABLE departments (
+    dept_id VARCHAR(40),
+    dept_name VARCHAR(40)
+);
+CREATE TABLE cleaned_departments
+AS
+select * FROM departments;
+CREATE TABLE cleaned_employees
+AS
+select * FROM employees;
+CREATE TABLE cleaned_salaries
+AS
+select * FROM salaries;
+CREATE TABLE cleaned_attendance
+AS
+select * FROM attendance;
+CREATE TABLE cleaned_performance
+AS
+select * FROM performance;
+DROP TABLE departments;
+
