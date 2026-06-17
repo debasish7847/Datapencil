@@ -1,1 +1,0 @@
-create DATABASE sql_challenge;
